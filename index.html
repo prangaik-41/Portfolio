@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranav Gaikwad | Portfolio</title>
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #111827;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --accent: #38bdf8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        header {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--muted);
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skill {
+            background: #020617;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--muted);
+            border-top: 1px solid #1f2933;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <header>
+        <h1>Pranav Gaikwad</h1>
+        <p>Software Developer in Progress • Frequent Learner • Tech Explorer</p>
+    </header>
+
+    <!-- ABOUT -->
+    <section>
+        <h2 class="section-title">About Me</h2>
+        <div class="card">
+            <p>
+                I am a passionate student developer who loves building real-world
+                projects and continuously learning new technologies.  
+                I enjoy problem-solving, experimenting with hardware & software,
+                and working on innovative ideas that can create impact.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <h2 class="section-title">Skills</h2>
+        <div class="skills">
+            <div class="skill">C Programming</div>
+            <div class="skill">Python</div>
+            <div class="skill">Data Structures & Algorithms</div>
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">R Language</div>
+            <div class="skill">API Integration</div>
+            <div class="skill">Raspberry Pi</div>
+            <div class="skill">Machine Learning (Basics)</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+
+            <div class="card">
+                <h3>AI Voice Detection System</h3>
+                <p>
+                    An API-based system to detect AI-generated vs human voice
+                    across multiple Indian languages.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>PulseGuard</h3>
+                <p>
+                    A health monitoring project focused on safety, early detection,
+                    and real-time data analysis.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Humanoid Head Tracking</h3>
+                <p>
+                    A computer vision project using MediaPipe for face tracking
+                    and humanoid interaction.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE / LEARNING -->
+    <section>
+        <h2 class="section-title">Learning & Experience</h2>
+        <div class="card">
+            <ul>
+                <li>Currently learning Data Structures & Algorithms (C)</li>
+                <li>Hands-on experience with Raspberry Pi and sensors</li>
+                <li>Participated in hackathons & innovation challenges</li>
+                <li>Exploring AI, ML, and system-level programming</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+        <h2 class="section-title">Contact</h2>
+        <div class="card">
+            <p>Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+            <p>GitHub: <a href="#">github.com/yourusername</a></p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Pranav Gaikwad • Built with HTML & CSS
+    </footer>
+
+</body>
+</html>
